@@ -1,0 +1,41 @@
+version: 5
+protectGateLamps: +
+protectGateBlocks: +
+defaultGateGroups:
+- default
+cooldown: 600
+open: 5
+teleportDelay: 2500
+lampUpdateVisibility: 30
+gateCommands:
+- TS:10 40 10
+- SUBTITLE:§6§l<gate:name>
+- TITLE:§e§lEntered to gate
+#- MSG:§6§lGate INFO:§e
+#      §6cd - §e<gate:cd>
+#      §6closeduntil - §e<gate:closeduntil>
+#      §6face - §e<gate:face>
+#      §6id - §e<gate:id>
+#      §6loc - §e<gate:loc>
+#      §6off - §e<gate:off>
+#      §6owner - §e<gate:owner>
+#      §6ownername - §e<gate:ownername>
+signFirstLine: [sgs]
+gateDesign:
+  bottom: DARK_PRISMARINE
+  top: PRISMARINE_BRICKS
+  sides: PRISMARINE
+  tophalf: PRISMARINE_BRICK_SLAB
+  bottomhalf: PRISMARINE_BRICKS
+  lampon: SEA_LANTERN
+  lampoff: REDSTONE_LAMP
+  open: WATER
+itemChanges:
+  AIR: STONE
+  WATER: LAPIS_BLOCK
+  LAVA: REDSTONE_BLOCK
+gateLimits:
+  admin: -1
+  moderator: 12
+  vip: 6
+  player: 2

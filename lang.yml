@@ -1,0 +1,276 @@
+hu:
+  stargate:
+    prefix: &9&lStarGate ► &f
+    noconsole: &cEzt a parancsot csak játékosok használhatják
+    main: &6/sg:&7 Csillagkapu parancslista
+      &6/sg cd:&7 Kapu cooldown ki-be kapcsolás
+      &6/sg del:&7 Csillagkapu törlése
+      &6/sg info:&7 Csillagkapu info
+      &6/sg list:&7 Csillagkapuk kilistázása
+      &6/sg link <kapu-id> <csoport>:&7 Csillagkapu csoporthoz csatolása/lecsatolása
+      &6/sg menu &7VAGY /dhd:&7 Tárcsázó menü
+      &6/sg set <id> <név> [típus]:&7 Csillagkapu építése
+      &6/sg setcd <mp>:&7 Játékos cooldown idő beállitása
+      &6/sg setdhd <id>:&7 Tárcsázó épités
+      &6/sg settime <mp>:&7 Kapu nyitvamaradási idő beállitása
+      &6/sg stat:&7 Csillagkapu statisztika
+      &6/sg toggle:&7 Kapu elérhetőségének ki-be kapcsolás
+      &6/sg tp:&7 Csillagkapuhoz teleportálás
+    wrongsub: &cHelytelen alparancs, írd be a &e&l/sg&c-t parancslistához
+    wrongtime: &cAz időnek egy pozitív egész számnak kell lennie
+    notime: &cNem adtad meg az idő argumentumot
+    noid: &cNem adtad meg az ID argumentumot
+    wrongid: &cA kapu azonosítójának csak számjegyekből szabad állnia
+    noperm: &cNincs jogod ehhez a parancshoz.
+    info: &cCsillagkapu Info
+      text: &b - <name>&b -
+          &6ID:&7 <id>
+          &6Világ:&7 <world>
+          &6Tulajdonos:&7 <owner>
+          &6Koordináta:&7 (x:<x>, y:<y>, z:<z>)
+          &6Tájolás:&7 <face>
+          &6Cooldown:&7 <cooldown>
+          &6Tárcsázható:&7 <dialable>
+    teleport: &cCsillagkapu Teleport
+      text: &7Teleportálva: &b<name>&7 (<id>)
+    yes: &a&l✓
+    no: &4&l✘
+    type:
+      public: publikus
+        gui: &a<name> (ID: <id>, Csoport: <group>)
+        list: &a<name> - <id>
+      hidden: rejtett
+        gui: &c<name> (ID: <id>, Csoport: <group>)
+        list: &c<name> - <id>
+      private: privát
+        gui: &6<name> (ID: <id>, Csoport: <group>)
+        list: &6<name> - <id>
+      off: &4<name> (ID: <id>, Csoport: <group>) OFF!
+      nocdsuffix: &b +NO-CD
+    list: &7Kapuk: <list>
+      separator: &7; &f
+      own: &7Saját kapuk: <list>
+        separator: &7; &f
+    nolampbreak: &cNe akard kiütni a kapuhoz tartozó vöröskőlámpákat.
+    noblockbreak: &cNe akard kiütni a kapuhoz tartozó blokkokat.
+    nodhdbreak: &cNe akard kiütni a kapuhoz tartozó tárcsázókat.
+    set: &bCsillagkapu mentve &7(<type>)
+      exists: &cEz az ID már foglalt.
+      existsName: &cEz az név már foglalt.
+      usage: &cHasználat:&e /sg set <id> <név> [típus]
+      private: privat private privát
+      public: public publikus
+      hidden: hide hidden rejtett
+      noblock: &cA létrehozandó kapu aljának a közepére kell nézned a kapu létrehozásához.
+      limit: &cNincs jogod több kapu létrehozására.
+    dialermenu: &4Tárcsázó Menü
+      dial: &7Csillagkapu tárcsázás: &b<name>&7 (<id>)
+      error: &7Csillagkapu tárcsázás: &b<id>&7 nem található.
+      locked: &7Csillagkapu lezárva a(z) &b<id>&7 számmal.
+    setdhd: &bDHD mentve.
+    dialer: &cCsillagkapu tárcsázó
+      off: &cEz a kapu ki van kapcsolva!
+      cooldown: &cVárj &e&l<sec>&c másodpercet, hogy használni tudd ezt a kaput.
+      dial: &bTárcsázás
+      info: &b<name>&b - <id>
+        lore: &5&oKattints ide a kapu listához
+    toggle: &cCsillagkapu ki/be
+    cooldown: &cCsillagkapu Cooldown
+      set: &bJátékos cooldown idö mentve. (<cooldown> mp)
+    time: &bKapu nyitvamaradási idö mentve. (<time> mp)
+    stat: &c - Csillagkapu Statisztika -
+      &7Lerakott kapuk száma:&b <count>
+      &7Nyitott kapuk száma:&b <open>
+      &7Játékos cooldown idö:&b <cooldown> &7(mp)
+      &7Nyitvamaradási idö:&b <opentime> &7(mp)
+    delete: &cCsillagkapu Törlés
+      deleted: &bCsillagkapu törölve.
+en:
+  stargate:
+    prefix: &9&lStarGate ► &f
+    noconsole: &cThis command can only be used from console
+    invalid: &cInvalid gate build.
+    main: &6/sg:&7 Stargate commands
+      &6/sg cd:&7 Toggle stargate cooldown
+      &6/sg del:&7 Remove stargate
+      &6/sg info:&7 Informations about a stargate
+      &6/sg list:&7 List of available stargates
+      &6/sg link <gate-id> <group-name>:&7 Link/Unlink gates to groups
+      &6/sg menu &7OR&6 /dhd:&7 Dialer menu
+      &6/sg set <gate-id> <name> [type]:&7 Create a stargate
+      &6/sg setcd <seconds>:&7 Set player cooldown
+      &6/sg setdhd <gate-id>:&7 Create a dialer
+      &6/sg remdhd:&7 Remove the dialer you are looking at.
+      &6/sg remalldhd <gate-id>:&7 Remove every DHD of a gate.
+      &6/sg settime <seconds>:&7 Set stargate open time
+      &6/sg stat:&7 Stargate statistics
+      &6/sg toggle:&7 Toggle stargate accessibility
+      &6/sg tp:&7 Teleport to stargate
+    noperm: &cYou don't have permission for this command
+    wrongsub: &cWrong subcommand, enter &e&l/sg&c for the command list
+    wrongtime: &cThe amount of seconds should be a possitive integer
+    notime: &cYou haven't entered the time argument
+    noid: &cYou haven't entered the ID argument
+    nogroup: &cYou haven't entered the group argument
+    notfound: &cGate &7<id>&c was not found.
+    wrongid: &cThe gates ID may only contain digits
+    link:
+      done: &bLinked gate &7<id> (<name>)&b to group &7<group>&b.
+      unlink: &bUnlinked gate &7<id> (name)&b from group &7<group>&b.
+    info: &cStargate Info
+      text: &b - <name>&b -
+          &6ID:&7 <id>
+          &6World:&7 <world>
+          &6Owner:&7 <owner>
+          &6Coords:&7 (x:<x>, y:<y>, z:<z>)
+          &6Facing:&7 <face>
+          &6Cooldown:&7 <cooldown>
+          &6Dialable:&7 <dialable>
+    setdhd: &bSaved DHD of gate &7<name> (<id>)&b.
+      already: &cThis block is a DHD already.
+      notlooking: &cYou are not looking towards a solid block.
+    remdhd: &bRemoved this DHD of gate &7<name> (<id>)&b.
+      not: &cThis block is not a DHD.
+    remalldhd: &bRemoved every DHD of gate &7<name> (<id>)&b.
+    teleport: &cStargate Teleport
+      text: &7Teleported to: &b<name>&7 (<id>)
+    yes: &a&l✓
+    no: &4&l✘
+    type:
+      public: public
+        gui: &a<name> (ID: <id>, Group: <group>)
+        list: &a<name> - <id>
+      hidden: hidden
+        gui: &c<name> (ID: <id>, Group: <group>)
+        list: &c<name> - <id>
+      private: private
+        gui: &6<name> (ID: <id>, Group: <group>)
+        list: &6<name> - <id>
+      off: &4<name> (ID: <id>, Group: <group>) OFF!
+      nocdsuffix: &b +NO-CD
+    list: &7Gates: <list>
+      separator: &7; &f
+    nolampbreak: &cDo not try to break the redstone lamps of the gate.
+    noblockbreak: &cDo not try to break the blocks of the gate.
+    nodhdbreak: &cDo not try to break the dialers of the gate.
+    set: &bSaved stargate &7(<type>)
+      exists: &cThis ID has been occupied already.
+      existsName: &cThis name has been occupied already.
+      private: privat private
+      public: public
+      hidden: hide hidden
+      noblock: &cIn order to create a gate, you need to look at its buttom middle block.
+      limit: &cYou are not permitted to make more gates.
+      usage: &cUsage:&e /sg set <id> <name> [type]
+    dialermenu: &4Dialer Menu
+      dial: &7Dialing stargate: &b<name>&7 (<id>)
+      error: &7Dialing stargate: &b<id>&7 not found.
+      locked: &7Locked stargate with preset id &b<id>&7.
+    dialer: &cStargate dialer
+      off: &cThis gate is turned off!
+      cooldown: &cYou need to wait &e&l<sec>&c secounds to use this gate.
+      dial: &bDial
+      info: &b<name>&b - <id>
+        lore: &5&oClick here for the gate list
+    toggle: &cStargate on/off
+    cooldown: &cStargate cooldown
+      set: &bSaved player cooldown time. (<cooldown> sec)
+    time: &bSaved gate open time. (<time> s)
+    stat: &c - Stargate Stats -
+      &7Built gates:&b <count>
+      &7Open gates:&b <open>
+      &7Player cooldown time:&b <cooldown> &7(sec)
+      &7Open time:&b <opentime> &7(sec)
+    delete: &cRemove Stargate
+      deleted: &bStargate has been removed.
+de:
+  stargate:
+    prefix: &9&lStarGate ► &f 
+    main: &6/sg:&7 Sternentor Befehle
+      &6/sg cd:&7 Wechslt die Abklingzeit des Sternentors
+      &6/sg del:&7 Entfernt ein Sternentor
+      &6/sg info:&7 Informatenen über ein Sternentor
+      &6/sg list:&7 Liste verfügbarer Sternentore
+      &6/sg link <tor-ID> <Gruppenname>:&7 (Ent)Verlinkt Sternentore zu Gruppen
+      &6/sg menu &7oder&6 /dhd:&7 Wählmenü
+      &6/sg set <Tor-ID> <Name> [Typ]:&7 Erstellt ein Sternentor
+      &6/sg setcdtime <Sekunden>:&7 Stellt Abklingkeit für Spieler ein
+      &6/sg setdhd <Tor-ID>:&7 Erstellt eine Wahlscheibe
+      &6/sg remdhd:&7 Entfert die angeschaute Wahlscheibe
+      &6/sg remalldhd <Tor-OD>:&7 Entfernt alle Wahlscheiben eines Sternentores
+      &6/sg settime <Sekunden>:&7 Stellt die Öffnungszeit der Sternentore ein
+      &6/sg stat:&7 Statistiken über ein Sternentor
+      &6/sg toggle:&7 Wechslt die Erreichbarkeit des Sernentores
+      &6/sg tp:&7 Zu einem Sternentor teleportieren
+    noperm: &cDu hast keine Erlaubnis diesen Befehl auszuführen.
+    wrongsub: &cFalscher Unterbefehl. Benutze &e&l/sg&c für die Befehlsliste
+    wrongtime: &cDie Anzahl der Sekunden muss ein positiver Wert sein.
+    notime: &cDu hast keinen Zeitwert eingegeben.
+    noid: &cDu hast keine Tor-ID angegeben.
+    nogroup: &cDu hast keinen Gruppennamen angegeben.
+    notfound: &cSternentor &7<id>&c wurde nicht gefunden.
+    wrongid: &cDie Tor-ID darf nur Zahlen enthalten
+    link:
+      done: &bVerlinke Sternentor &7<id> (<name>)&b zur Gruppe &7<group>&b.
+      unlink: &bEntlinke Sternentor &7<id> (name)&b von der Gruppe &7<group>&b.
+    info: Sternentorinformationen
+      text: &b - <name>&b -
+          &6Tor-ID:&7 <id>
+          &6Welt:&7 <world>
+          &6Besitzer:&7 <owner>
+          &6Position:&7 (x:<x>, y:<y>, z:<z>)
+          &6Aussichtung:&7 <face>
+          &6Abklingzeit:&7 <cooldown>
+          &6Deaktiviert:&7 <dialable>
+    setdhd: &bDHD gespeichert.
+    teleport: &cSternentorteleport
+      text: &7Teleportiert nach: &b<name>&7 (<id>)
+    yes: &a&l✓
+    no: &4&l✘
+    type:
+      public: Öffentlich
+        gui: &a<name> (Tor-ID: <id>, Gruppe: <group>)
+        list: &a<name> - <id>
+      hidden: Versteckt
+        gui: &c<name> (Tor-ID: <id>, Gruppe: <group>)
+        list: &c<name> - <id>
+      private: Private
+        gui: &6<name> (Tor-ID: <id>, Gruppe: <group>)
+        list: &6<name> - <id>
+      off: &4<name> (Tor-ID: <id>, Gruppe: <group>) KEINE!
+      nocdsuffix: &b +NO-CD
+    list: &7Sternentore: <list>
+      separator: &7; &f
+    nolampbreak: &cVersuche nicht die Redstonelampen eines Sternentores zu zerstören.
+    noblockbreak: &cVersuche nicht die Blöcke eines Sternentores zu zerstören.
+    nodhdbreak: &cVersuche nicht die Wahlscheiben eines Sternentores zu zerstören.
+    set: &bgespeicherte Sternentore &7(<type>)
+      exists: &cDiese Tor-ID ist bereits belegt.
+      existsName: &cDiese Name wird bereits verwendet.
+      private: privat private
+      public: öffentlich
+      hidden: versteckt versteckte
+      noblock: &cUm ein Sternentor zu erstellen, schaue auf den mittleren unteren Block.
+      limit: &cDu hast keine Berechtigung weitere Sternentore zu erstellen.
+      usage: &cBenutzung:&e /sg set <Tor-ID> <Name> [Typ]
+    dialermenu: &4Wählermenü
+      dial: &7Gewähltes Sternentor: &b<name>&7 (<id>)
+      error: &7Gewähltes Sternentor: &b<id>&7 nicht gefunden.
+      locked: &7Das Sternentor mit der id &b<id>&7 wurde gesperrt.
+    dialer: &cWahlscheibe
+      off: &cDieses Sternentor ist nicht aktiv.
+      cooldown: &cDu musst &e&l<sec>&c Sekunden warten, eh du das Sternentor benutzen kannst.
+      dial: &bWähle
+      info: &b<name>&b - <id>
+        lore: &5&oKlicke hier für eine Sternentorliste
+    toggle: &cSternentor aktiv/deaktiviert
+    cooldown: &cAbklingzeit des Sternentores
+      set: &bgespeicherte Spielerabklingzeit: (<cooldown> Sekunden)
+    time: &bgespeicherte Öffnungszeit des Sternentores. (<time> Sekunden)
+    stat: &c - Statistik der Sernentore -
+      &7Gebaute Sternentore:&b <count>
+      &7Offene Stenentore:&b <open>
+      &7Spielerabklingzeit:&b <cooldown> &7(Sekunden)
+      &7Öffnungszeit:&b <opentime> &7(Sekunden)
+    delete: &cEntfernt das Sternentor
+      deleted: &bDas Sternentor wurde entfernt.

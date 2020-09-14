@@ -1,0 +1,13 @@
+name: StarGate
+version: "10.0"
+main: gyurix.stargate.Main
+api-version: 1.13
+depend: [SpigotLib]
+commands:
+  stargate:
+    description: Stargate main command
+    usage: /<command> [subcommand] [parameters]
+    aliases: [sg,sgate,starg,sgm]
+  dhd:
+    description: Dialer menu
+    usage: /<command>
